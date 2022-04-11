@@ -43,6 +43,10 @@ class WallHeightUtils{
     return this._currentTokenElevation;
   }
 
+  get vaulting() {
+    return this._blockSightMovement;
+  }
+
   schedulePerceptionUpdate(){
     canvas.perception.schedule({
       lighting: { initialize: true, refresh: true },
